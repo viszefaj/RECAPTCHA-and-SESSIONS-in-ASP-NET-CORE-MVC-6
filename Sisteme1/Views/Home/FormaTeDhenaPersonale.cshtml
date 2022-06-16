@@ -1,0 +1,19 @@
+﻿@model Sisteme1.Models.Guest
+
+<style>
+.form-control{
+    width:50%;
+}
+</style>
+
+<h2>Faqe per personat e Autorizuar!</h2>
+
+<form asp-controller="Home" asp-action="FormaTeDhenaPersonale" method="post">
+
+    <label>Preferenca Muzikore :</label>
+    <input asp-for="MusicName" class="form-control" />
+    <br />
+   
+    <input type="submit" value="Ruaj" class=" btn btn-primary " />
+
+</form>
